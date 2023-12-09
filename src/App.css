@@ -1,38 +1,136 @@
-.App {
-  text-align: center;
+body {
+  background-color: rgb(241, 241, 241);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.material-icons {
+  color: rgb(96, 95, 95);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.card {
   display: flex;
   flex-direction: column;
+  justify-content: center; 
+  height: auto;
+  width: 350px;
+  background-color: white;
+  border-radius: 5px;
+  gap: 8px;
+  padding-bottom: 16px;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+}
+
+.cardTop {
+  display: flex;
+  margin: 20px 20px 0px 20px;
+  justify-content: space-between;
   align-items: center;
+}
+
+.cardTopText {
+  margin: 0px;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: rgb(94, 94, 94);
+}
+
+.cardPicture {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+}
+
+.cardMiddle {
+  display: flex;
+}
+
+.cardTitle {
+  max-width: 300px;
+  margin: 0px 0px 0px 20px;
+  font-weight: bold;
+  font-size: 14px;
+  word-wrap: break-word;
+}
+
+.cardBottom {
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+  gap: 10px;
+  padding: 5px 0px 0px 20px;
+}
+
+.cardTag {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  gap: 5px;
+  border: 1px solid rgb(209, 209, 209);
+  border-radius: 5px;
+  padding: 5px 2.5px;
+  font-size: 14px;
+  color: rgb(134, 134, 134);
 }
 
-.App-link {
-  color: #61dafb;
+.statusCircle {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: rgb(171, 171, 171);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0px 20px;
+  gap: 10px;
+}
+
+.colHeading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.homeBody {
+  display: flex;
+  align-items: baseline;
+  margin-top: 20px;
+}
+
+.displayHeading {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: auto;
+  height: 50px;
+  background-color: white;
+  padding: 20px 0px 0px 20px;
+  z-index: 2;
+  position: relative;
+}
+
+.displayButton {
+  background-color: white;
+  border: 1px gray solid;
+}
+
+.homeHeading {
+  background-color: white;
+  width: 200px;
+  border: 1px gray solid;
+  border-radius: 8px;
+}
+
+.selectHeading {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0px 20px;
+  gap: 50px;
+  font-size: 14px;
+}
+
+.tag {
+  margin: 0px;
 }
